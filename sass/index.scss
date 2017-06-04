@@ -1,0 +1,212 @@
+@import "base";
+
+header {
+  position: fixed;
+  display: block;
+  left: 0;
+  right: 0;
+  height: 61px;
+}
+
+div.container {
+  position: relative;
+  width: $pc-page-width;
+  margin: 0 auto;
+  padding-left: $padding-size;
+  padding-right: $padding-size;
+}
+
+div.container.content-title {
+  padding-top: $padding-size*2;
+}
+
+div.textHeaderTitle {
+  position: relative;
+  height: 300px;
+  padding-top: $padding-size*1.5;
+}
+
+h1.textHeaderTitleContent {
+  color: $deep-blue;
+  font-size: $mainTitle-font-size;
+  font-weight: bold;
+}
+
+form.searchForm {
+  position: relative;
+  width: $pc-page-width;
+  display: table;
+  table-layout: fixed;
+  height: 82px;
+  border: 1px solid $gray-white;
+  @include border-radius(3px);
+}
+
+div.searchForm-label {
+  position: relative;
+  margin-top: ($padding-size)/2;
+  margin-left: ($padding-size)/2;
+}
+
+div.searchForm-input {
+  position: absolute;
+  top: $padding-size+$spacing-size;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: $padding-size;
+  text-align: left;
+}
+
+div.searchForm-input > input {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+div.searchForm-input > input:focus {
+  outline: 0;
+}
+
+div.searchForm-input > button {
+  background-color: inherit;
+  text-align: left;
+  padding: 0;
+  border: none;
+  outline: 0;
+  width: 100%;
+  height: 100%;
+}
+
+div.searchFormColumn:first-of-type {
+  border: none;
+}
+
+div.searchFormColumn {
+  position: relative;
+  display: table-cell;
+  border-left: 1px solid $gray-white;
+}
+
+div.content-preview {
+  margin-top: ($padding-size)*2;
+}
+
+div.textPreviewColumn {
+  position: relative;
+  display: table-cell;
+}
+
+div.previewContent {
+  font-size: 0;
+  position: relative !important;
+  display: block !important;
+}
+
+div.previewTitle {
+  display: table;
+  table-layout: fixed;
+}
+
+div.textPreviewTitle {
+  display: table-cell;
+}
+
+div.textPreviewTitle > h1 {
+  font-size: $subTitle-font-size;
+  margin-bottom: $padding-size;
+}
+
+div.cardContainer {
+  display: inline-block;
+  width: 20%;
+  padding-left: $spacing-size;
+  padding-right: $spacing-size;
+  font-size: $content-font-size;
+}
+
+div.cardThumb {
+  position: relative;
+  padding-top: 150%;
+}
+
+div.cardFitContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+div.cardContent {
+  margin-top: $spacing-size;
+  font-size: $content-font-size;
+}
+
+div.cardInfo {
+  margin-top: $spacing-size/2;
+  font-size: 0;
+}
+
+div.cardDays {
+  color: $deep-blue;
+  font-size: $content-font-size+$fontSizeAdder;
+  width: 40%;
+  display: inline-block;
+  font-size: ($content-font-size)+(($fontSizeAdder)/2) !important;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+div.userRating {
+  width: 60%;
+  display: inline-block;
+  text-align: center;
+}
+
+div.userRating > span {
+  display: inline-block;
+  margin-left: $spacing-size/2;
+}
+
+div.cardTheme {
+  color: $deep-blue;
+  font-size: $content-font-size+$fontSizeAdder;
+  width: 40%;
+  display: inline-block;
+  font-size: ($content-font-size)+(($fontSizeAdder)/2) !important;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+
+div.cardPartyStatus {
+  width: 60%;
+  display: inline-block;
+  font-size: $content-font-size+($fontSizeAdder/2);
+  text-align: right;
+}
+div.cardPartyStatus>span{
+  display: inline-block;
+}
+
+div.cardCreator {
+  font-size: $content-font-size;
+  margin-right: $spacing-size/2;
+  text-align: right;
+  letter-spacing: -1px;
+}
+
+footer {
+  background-color: $deep-white;
+  border-top: 1px solid $gray-white;
+  position: relative;
+  margin-top: $spacing-size*5;
+}
+
+

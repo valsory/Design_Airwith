@@ -1,0 +1,327 @@
+/* line 5, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 7, ../sass/_base.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 10, ../sass/_base.scss */
+div {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 41, ../sass/_base.scss */
+body {
+  background-color: #FCFEFD;
+  color: #353535;
+}
+
+/* line 3, ../sass/index.scss */
+header {
+  position: fixed;
+  display: block;
+  left: 0;
+  right: 0;
+  height: 61px;
+}
+
+/* line 11, ../sass/index.scss */
+div.container {
+  position: relative;
+  width: 1080px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* line 19, ../sass/index.scss */
+div.container.content-title {
+  padding-top: 48px;
+}
+
+/* line 23, ../sass/index.scss */
+div.textHeaderTitle {
+  position: relative;
+  height: 300px;
+  padding-top: 36px;
+}
+
+/* line 29, ../sass/index.scss */
+h1.textHeaderTitleContent {
+  color: #497799;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+/* line 35, ../sass/index.scss */
+form.searchForm {
+  position: relative;
+  width: 1080px;
+  display: table;
+  table-layout: fixed;
+  height: 82px;
+  border: 1px solid #DDDDDD;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 45, ../sass/index.scss */
+div.searchForm-label {
+  position: relative;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+
+/* line 51, ../sass/index.scss */
+div.searchForm-input {
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: 24px;
+  text-align: left;
+}
+
+/* line 61, ../sass/index.scss */
+div.searchForm-input > input {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* line 72, ../sass/index.scss */
+div.searchForm-input > input:focus {
+  outline: 0;
+}
+
+/* line 76, ../sass/index.scss */
+div.searchForm-input > button {
+  background-color: inherit;
+  text-align: left;
+  padding: 0;
+  border: none;
+  outline: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 86, ../sass/index.scss */
+div.searchFormColumn:first-of-type {
+  border: none;
+}
+
+/* line 90, ../sass/index.scss */
+div.searchFormColumn {
+  position: relative;
+  display: table-cell;
+  border-left: 1px solid #DDDDDD;
+}
+
+/* line 96, ../sass/index.scss */
+div.content-preview {
+  margin-top: 48px;
+}
+
+/* line 100, ../sass/index.scss */
+div.textPreviewColumn {
+  position: relative;
+  display: table-cell;
+}
+
+/* line 105, ../sass/index.scss */
+div.previewContent {
+  font-size: 0;
+  position: relative !important;
+  display: block !important;
+}
+
+/* line 111, ../sass/index.scss */
+div.previewTitle {
+  display: table;
+  table-layout: fixed;
+}
+
+/* line 116, ../sass/index.scss */
+div.textPreviewTitle {
+  display: table-cell;
+}
+
+/* line 120, ../sass/index.scss */
+div.textPreviewTitle > h1 {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+/* line 125, ../sass/index.scss */
+div.cardContainer {
+  display: inline-block;
+  width: 20%;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-size: 14px;
+}
+
+/* line 133, ../sass/index.scss */
+div.cardThumb {
+  position: relative;
+  padding-top: 150%;
+}
+
+/* line 138, ../sass/index.scss */
+div.cardFitContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* line 146, ../sass/index.scss */
+div.cardContent {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+/* line 151, ../sass/index.scss */
+div.cardInfo {
+  margin-top: 3px;
+  font-size: 0;
+}
+
+/* line 156, ../sass/index.scss */
+div.cardDays {
+  color: #497799;
+  font-size: 20px;
+  width: 40%;
+  display: inline-block;
+  font-size: 17px !important;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+/* line 166, ../sass/index.scss */
+div.userRating {
+  width: 60%;
+  display: inline-block;
+  text-align: center;
+}
+
+/* line 172, ../sass/index.scss */
+div.userRating > span {
+  display: inline-block;
+  margin-left: 3px;
+}
+
+/* line 177, ../sass/index.scss */
+div.cardTheme {
+  color: #497799;
+  font-size: 20px;
+  width: 40%;
+  display: inline-block;
+  font-size: 17px !important;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+/* line 188, ../sass/index.scss */
+div.cardPartyStatus {
+  width: 60%;
+  display: inline-block;
+  font-size: 17px;
+  text-align: right;
+}
+
+/* line 194, ../sass/index.scss */
+div.cardPartyStatus > span {
+  display: inline-block;
+}
+
+/* line 198, ../sass/index.scss */
+div.cardCreator {
+  font-size: 14px;
+  margin-right: 3px;
+  text-align: right;
+  letter-spacing: -1px;
+}
+
+/* line 205, ../sass/index.scss */
+footer {
+  background-color: #F4F4F4;
+  border-top: 1px solid #DDDDDD;
+  position: relative;
+  margin-top: 30px;
+}

@@ -1,0 +1,44 @@
+@import 'compass';
+@import "compass/reset";
+@import "compass/utilities";
+@import "compass/css3";
+
+//box-sizing
+*{
+  @include box-sizing(border-box);
+}
+div{
+  @include box-sizing(border-box);
+}
+
+//Font
+$mainTitle-font-size:48px;
+$subTitle-font-size:24px;
+$content-font-size:14px;
+$fontSizeAdder:6px;
+
+// media size
+$pc-page-width:1080px;
+$tablet-width:720px;
+$mobile-width:480px;
+
+// base spacing
+$spacing-size: 6px;
+$padding-size: 24px;
+
+// Color Set
+$font-color: #353535;
+$light-white: #FCFEFD;
+$deep-white: #F4F4F4;
+$sky-blue: #84C0F4;
+$deep-blue: #497799;
+$gray-white: #DDDDDD;
+
+// pc
+$pc-header-size:61px;
+
+// Default Set
+body{
+  background-color: $light-white;
+  color:$font-color
+}

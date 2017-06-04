@@ -1,0 +1,41 @@
+{
+  "users": [
+    {
+      "email": "valusory@gmail.com",
+      "first_name": "Hyunsung",
+      "last_name": "Kim",
+      "username": "Helper",
+      "guide":"false"
+    },
+    {
+      "email": "pro_vite@naver.com",
+      "first_name": "Hyunsung",
+      "last_name": "Kim",
+      "username": "Helper",
+      "guide":"false"
+    }
+  ],
+  "travel_plan": [
+    {
+      "created": "2017",
+      "user": "Helper",
+      "connect": "allow",
+      "router": {
+        "1": {
+          "city": "Seoul",
+          "country": "South Korea",
+          "lat": "37.532600",
+          "lng": "127.024612",
+          "time": "48:00"
+        },
+        "2": {
+          "city": "Incheon",
+          "country": "South Korea",
+          "lat": "37.456256",
+          "lng": "126.705206",
+          "time": "24:00"
+        }
+      }
+    }
+  ]
+}
