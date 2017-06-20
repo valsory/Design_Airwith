@@ -5,7 +5,30 @@ header {
   display: block;
   left: 0;
   right: 0;
-  height: 61px;
+  height: $pc-header-size;
+  z-index: 1;
+  font-size: 0;
+}
+
+header>*{
+  display: inline-block;
+}
+header:after{
+  display: block;
+  content:"";
+  clear:both;
+}
+
+nav{
+  float: right;
+}
+
+ul.menu li.menuList{
+  font-size: $base-font-size;
+  line-height: $pc-header-size;
+  float:left;
+  padding-left:$spacing-size*2;
+  padding-right:$spacing-size*2;
 }
 
 div.container {
@@ -153,6 +176,16 @@ div.cardInfo {
   font-size: 0;
 }
 
+div.cardPartyInfo{
+  display: table;
+  width:100%;
+}
+
+div.cardPartyInfo>div{
+  display: table-cell !important;
+  font-size: $content-font-size;
+}
+
 div.cardDays {
   color: $deep-blue;
   font-size: $content-font-size+$fontSizeAdder;
@@ -177,7 +210,6 @@ div.userRating > span {
 div.cardTheme {
   color: $deep-blue;
   font-size: $content-font-size+$fontSizeAdder;
-  width: 40%;
   display: inline-block;
   font-size: ($content-font-size)+(($fontSizeAdder)/2) !important;
   font-weight: 800;
@@ -186,13 +218,27 @@ div.cardTheme {
 
 
 div.cardPartyStatus {
-  width: 60%;
   display: inline-block;
-  font-size: $content-font-size+($fontSizeAdder/2);
+  font-size: $content-font-size;
   text-align: right;
 }
+
 div.cardPartyStatus>span{
   display: inline-block;
+}
+
+div.cardTitle{
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: $content-font-size;
+  text-align: left;
+  white-space: normal;
+  line-height: 1.2;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 div.cardCreator {
@@ -208,5 +254,4 @@ footer {
   position: relative;
   margin-top: $spacing-size*5;
 }
-
 

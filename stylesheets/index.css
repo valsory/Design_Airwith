@@ -90,9 +90,37 @@ header {
   left: 0;
   right: 0;
   height: 61px;
+  z-index: 1;
+  font-size: 0;
 }
 
-/* line 11, ../sass/index.scss */
+/* line 13, ../sass/index.scss */
+header > * {
+  display: inline-block;
+}
+
+/* line 16, ../sass/index.scss */
+header:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+/* line 22, ../sass/index.scss */
+nav {
+  float: right;
+}
+
+/* line 26, ../sass/index.scss */
+ul.menu li.menuList {
+  font-size: 16px;
+  line-height: 61px;
+  float: left;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* line 34, ../sass/index.scss */
 div.container {
   position: relative;
   width: 1080px;
@@ -101,26 +129,26 @@ div.container {
   padding-right: 24px;
 }
 
-/* line 19, ../sass/index.scss */
+/* line 42, ../sass/index.scss */
 div.container.content-title {
   padding-top: 48px;
 }
 
-/* line 23, ../sass/index.scss */
+/* line 46, ../sass/index.scss */
 div.textHeaderTitle {
   position: relative;
   height: 300px;
   padding-top: 36px;
 }
 
-/* line 29, ../sass/index.scss */
+/* line 52, ../sass/index.scss */
 h1.textHeaderTitleContent {
   color: #497799;
   font-size: 48px;
   font-weight: bold;
 }
 
-/* line 35, ../sass/index.scss */
+/* line 58, ../sass/index.scss */
 form.searchForm {
   position: relative;
   width: 1080px;
@@ -133,14 +161,14 @@ form.searchForm {
   border-radius: 3px;
 }
 
-/* line 45, ../sass/index.scss */
+/* line 68, ../sass/index.scss */
 div.searchForm-label {
   position: relative;
   margin-top: 12px;
   margin-left: 12px;
 }
 
-/* line 51, ../sass/index.scss */
+/* line 74, ../sass/index.scss */
 div.searchForm-input {
   position: absolute;
   top: 30px;
@@ -151,7 +179,7 @@ div.searchForm-input {
   text-align: left;
 }
 
-/* line 61, ../sass/index.scss */
+/* line 84, ../sass/index.scss */
 div.searchForm-input > input {
   position: relative;
   background-color: transparent;
@@ -163,12 +191,12 @@ div.searchForm-input > input {
   z-index: 1;
 }
 
-/* line 72, ../sass/index.scss */
+/* line 95, ../sass/index.scss */
 div.searchForm-input > input:focus {
   outline: 0;
 }
 
-/* line 76, ../sass/index.scss */
+/* line 99, ../sass/index.scss */
 div.searchForm-input > button {
   background-color: inherit;
   text-align: left;
@@ -179,54 +207,54 @@ div.searchForm-input > button {
   height: 100%;
 }
 
-/* line 86, ../sass/index.scss */
+/* line 109, ../sass/index.scss */
 div.searchFormColumn:first-of-type {
   border: none;
 }
 
-/* line 90, ../sass/index.scss */
+/* line 113, ../sass/index.scss */
 div.searchFormColumn {
   position: relative;
   display: table-cell;
   border-left: 1px solid #DDDDDD;
 }
 
-/* line 96, ../sass/index.scss */
+/* line 119, ../sass/index.scss */
 div.content-preview {
   margin-top: 48px;
 }
 
-/* line 100, ../sass/index.scss */
+/* line 123, ../sass/index.scss */
 div.textPreviewColumn {
   position: relative;
   display: table-cell;
 }
 
-/* line 105, ../sass/index.scss */
+/* line 128, ../sass/index.scss */
 div.previewContent {
   font-size: 0;
   position: relative !important;
   display: block !important;
 }
 
-/* line 111, ../sass/index.scss */
+/* line 134, ../sass/index.scss */
 div.previewTitle {
   display: table;
   table-layout: fixed;
 }
 
-/* line 116, ../sass/index.scss */
+/* line 139, ../sass/index.scss */
 div.textPreviewTitle {
   display: table-cell;
 }
 
-/* line 120, ../sass/index.scss */
+/* line 143, ../sass/index.scss */
 div.textPreviewTitle > h1 {
   font-size: 24px;
   margin-bottom: 24px;
 }
 
-/* line 125, ../sass/index.scss */
+/* line 148, ../sass/index.scss */
 div.cardContainer {
   display: inline-block;
   width: 20%;
@@ -235,13 +263,13 @@ div.cardContainer {
   font-size: 14px;
 }
 
-/* line 133, ../sass/index.scss */
+/* line 156, ../sass/index.scss */
 div.cardThumb {
   position: relative;
   padding-top: 150%;
 }
 
-/* line 138, ../sass/index.scss */
+/* line 161, ../sass/index.scss */
 div.cardFitContainer {
   position: absolute;
   top: 0;
@@ -250,19 +278,31 @@ div.cardFitContainer {
   right: 0;
 }
 
-/* line 146, ../sass/index.scss */
+/* line 169, ../sass/index.scss */
 div.cardContent {
   margin-top: 6px;
   font-size: 14px;
 }
 
-/* line 151, ../sass/index.scss */
+/* line 174, ../sass/index.scss */
 div.cardInfo {
   margin-top: 3px;
   font-size: 0;
 }
 
-/* line 156, ../sass/index.scss */
+/* line 179, ../sass/index.scss */
+div.cardPartyInfo {
+  display: table;
+  width: 100%;
+}
+
+/* line 184, ../sass/index.scss */
+div.cardPartyInfo > div {
+  display: table-cell !important;
+  font-size: 14px;
+}
+
+/* line 189, ../sass/index.scss */
 div.cardDays {
   color: #497799;
   font-size: 20px;
@@ -273,44 +313,57 @@ div.cardDays {
   letter-spacing: -1px;
 }
 
-/* line 166, ../sass/index.scss */
+/* line 199, ../sass/index.scss */
 div.userRating {
   width: 60%;
   display: inline-block;
   text-align: center;
 }
 
-/* line 172, ../sass/index.scss */
+/* line 205, ../sass/index.scss */
 div.userRating > span {
   display: inline-block;
   margin-left: 3px;
 }
 
-/* line 177, ../sass/index.scss */
+/* line 210, ../sass/index.scss */
 div.cardTheme {
   color: #497799;
   font-size: 20px;
-  width: 40%;
   display: inline-block;
   font-size: 17px !important;
   font-weight: 800;
   letter-spacing: -1px;
 }
 
-/* line 188, ../sass/index.scss */
+/* line 220, ../sass/index.scss */
 div.cardPartyStatus {
-  width: 60%;
   display: inline-block;
-  font-size: 17px;
+  font-size: 14px;
   text-align: right;
 }
 
-/* line 194, ../sass/index.scss */
+/* line 226, ../sass/index.scss */
 div.cardPartyStatus > span {
   display: inline-block;
 }
 
-/* line 198, ../sass/index.scss */
+/* line 230, ../sass/index.scss */
+div.cardTitle {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  text-align: left;
+  white-space: normal;
+  line-height: 1.2;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* line 244, ../sass/index.scss */
 div.cardCreator {
   font-size: 14px;
   margin-right: 3px;
@@ -318,7 +371,7 @@ div.cardCreator {
   letter-spacing: -1px;
 }
 
-/* line 205, ../sass/index.scss */
+/* line 251, ../sass/index.scss */
 footer {
   background-color: #F4F4F4;
   border-top: 1px solid #DDDDDD;

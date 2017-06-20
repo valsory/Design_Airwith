@@ -1,0 +1,74 @@
+@import "base";
+
+$hdr-router-height:31px;
+
+html, body {
+  background-color: $light-white;
+  width:100%;
+  height:100%;
+  font-size: 0;
+}
+
+header{
+  display: block;
+  position:relative;
+  height:$pc-header-size;
+  line-height: $pc-header-size;
+  border-bottom: 3px solid $sky-blue;
+}
+
+div.hdr-router{
+  height:$hdr-router-height;
+  font-size: $content-font-size;
+  padding:0 9px 0 9px;
+  border-bottom: 1.2px solid $gray-white;
+}
+div.hdr-router-info{
+  display: inline-block;
+}
+
+main{
+  display: block;
+  position:absolute;
+  top:$pc-header-size;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+div.side-router{
+  width:360px;
+  position:absolute;
+  top:$hdr-router-height;
+  left:0;
+  right:0;
+  bottom:0;
+  font-size: $content-font-size;
+  border-right: 1.2px solid $gray-white;
+}
+
+div.side-router>div{
+  font-size: $content-font-size;
+}
+
+div.map-viewer{
+  position:absolute;
+  top:$hdr-router-height;
+  left:360px;
+  right:0;
+  bottom:0;
+}
+
+
+div.map-viewer>.map-filter{
+  position:absolute;
+  display: block;
+  width:100%;
+  height:61px;
+  border-bottom: 1.2px solid $gray-white;
+  font-size:$content-font-size;
+}
+
+div.map-viewer>.map-view{
+  font-size:$content-font-size;
+}
